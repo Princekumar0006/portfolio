@@ -26,10 +26,12 @@ export default function Home() {
 
               <h2 className="text-2xl text-[#e87532] font-medium">Frontend Developer</h2>
 
-              <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-600">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Tailwind CSS and Shopify.</p>
+              <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-600">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Bootstrap and Tailwind CSS.</p>
 
               <div className="flex items-center justify-center lg:justify-start gap-3">
-                <Button className="rounded-full px-4 py-2.5 h-auto">View my work</Button>
+                <Button asChild className="rounded-full px-4 py-2.5 h-auto">
+                  <Link href="/portfolio">View my work</Link>
+                </Button>
                 <Button asChild variant="outline" className="rounded-full px-4 py-2.5 h-auto">
                   <Link href="/contact">Let&apos;s connect</Link>
                 </Button>
@@ -55,7 +57,7 @@ export default function Home() {
 
                 {/* Badge */}
                 <div className="absolute bottom-10 left-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg">
-                  <p className="text-sm font-semibold">5+ Years</p>
+                  <p className="text-sm font-semibold">4+ Years</p>
                   <p className="text-xs text-slate-500">Experience</p>
                 </div>
               </div>
