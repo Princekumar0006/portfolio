@@ -9,11 +9,11 @@ export default function Footer() {
         </p>
 
         <div className="mt-5 flex justify-center gap-3">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
+          <a href="https://github.com/Princekumar0006" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
             <FaGithub />
           </a>
 
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
+          <a href="www.linkedin.com/in/suresh-kumar-b29490225" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
             <FaLinkedin />
           </a>
 
