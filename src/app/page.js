@@ -1,65 +1,68 @@
+"use client";
+import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
+import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <section className="relative w-full min-h-[70vh] flex items-center py-24">
+        <div className="w-full max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+              }}
+              className="space-y-5 text-center lg:text-left"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <p className="text-[#e87532] font-medium">Hello, I'm</p>
+              <h1 className="text-6xl lg:text-7xl font-semibold tracking-tight">Suresh Kumar</h1>
+
+              <h2 className="text-2xl text-[#e87532] font-medium">Frontend Developer</h2>
+
+              <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-600">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Tailwind CSS and Shopify.</p>
+
+              <div className="flex items-center justify-center lg:justify-start gap-3">
+                <Button className="rounded-full px-4 py-2.5 h-auto">View my work</Button>
+                <Button asChild variant="outline" className="rounded-full px-4 py-2.5 h-auto">
+                  <Link href="/contact">Let&apos;s connect</Link>
+                </Button>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 80 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.2,
+                ease: "easeOut",
+              }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <div className="relative flex items-center justify-center lg:justify-end">
+                {/* Orange Shape */}
+                <div className="absolute h-[320px] w-[320px] rounded-[35%_65%_70%_30%/30%_30%_70%_70%] bg-[#e87532]/12 md:h-[420px] md:w-[420px]" />
+
+                {/* Image */}
+                <div className="relative z-10 h-[300px] w-[300px] overflow-hidden rounded-[35%_65%_70%_30%/30%_30%_70%_70%] bg-[#fbe6da] shadow-xl md:h-[400px] md:w-[400px]">
+                  <Image src="https://bootstrapmade.com/content/demo/FolioOne/assets/img/profile/profile-square-11.webp" alt="Suresh Kumar" fill priority className="object-cover transition-opacity duration-500" />
+                </div>
+
+                {/* Badge */}
+                <div className="absolute bottom-10 left-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg">
+                  <p className="text-sm font-semibold">5+ Years</p>
+                  <p className="text-xs text-slate-500">Experience</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
