@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative w-full min-h-[70vh] flex items-center py-24">
+      <section className="relative w-full min-h-[70vh] flex items-center py-20 pt-10">
         <div className="w-full max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <motion.div
