@@ -46,7 +46,7 @@ export default function Home() {
                 ease: "easeOut",
               }}
             >
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center">
                 {/* Orange Shape */}
                 <div className="absolute h-[320px] w-[320px] rounded-[35%_65%_70%_30%/30%_30%_70%_70%] bg-[#e87532]/12 md:h-[420px] md:w-[420px]" />
 
