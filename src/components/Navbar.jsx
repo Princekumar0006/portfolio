@@ -25,9 +25,9 @@ export default function Navbar() {
           <Link className={pathname === "/resume" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/resume">
             Resume
           </Link>
-          <Link className={pathname === "/portfolio" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/portfolio">
+          {/* <Link className={pathname === "/portfolio" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/portfolio">
             Portfolio
-          </Link>
+          </Link> */}
           <Link className={pathname === "/contact" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/contact">
             Contact
           </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
                     { label: "Home", href: "/" },
                     { label: "About", href: "/about" },
                     { label: "Resume", href: "/resume" },
-                    { label: "Portfolio", href: "/portfolio" },
+                    // { label: "Portfolio", href: "/portfolio" },
                     { label: "Contact", href: "/contact" },
                   ].map((item) => (
                     <SheetClose asChild key={item.href}>
