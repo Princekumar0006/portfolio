@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <section className="relative w-full py-24">
+      <section className="relative w-full py-20 pt-10">
         <div className="mx-auto w-full max-w-6xl px-4">
           {/* Heading */}
 

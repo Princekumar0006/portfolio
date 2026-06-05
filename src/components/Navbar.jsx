@@ -9,7 +9,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="sticky top-4 z-50 text-black py-3">
+    <nav className="sticky top-0 z-50 text-black bg-white py-8">
       <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full bg-white shadow-lg px-6 py-3">
         <div className="flex flex-col items-start justify-center gap-0.5">
           <span className="text-base font-semibold">Suresh Kumar</span>

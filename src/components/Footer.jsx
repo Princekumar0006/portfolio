@@ -17,9 +17,9 @@ export default function Footer() {
             <FaLinkedin />
           </a>
 
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
+          {/* <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border text-slate-500 transition-all hover:border-[#e87532] hover:text-[#e87532]">
             <FaInstagram />
-          </a>
+          </a> */}
         </div>
 
         <p className="mt-4 text-xs text-slate-500">

@@ -45,7 +45,7 @@ export default function PortfolioPage() {
       : projects.filter((project) => project.category === activeTab);
 
   return (
-    <section className="py-24">
+    <section className="relative py-20 pt-10">
       <div className="mx-auto max-w-6xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
