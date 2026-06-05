@@ -84,9 +84,11 @@ export default function About() {
                   <p className="text-slate-600">Kota, Rajasthan</p>
                 </div>
 
-                <a href="/Suresh-Kumar-Resume.pdf" download>
-                  Download Resume
-                </a>
+                <Button asChild>
+                  <a href="/suresh-kumar-resume.pdf" download="Suresh-Kumar-Resume.pdf" className="w-fit px-4 py-2 h-auto">
+                    Download Resume
+                  </a>
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -108,6 +110,16 @@ export default function About() {
               {
                 title: "JavaScript",
                 desc: "Interactive frontend functionality.",
+                percent: "80%",
+              },
+              {
+                title: "Bootstrap",
+                desc: "Modern CSS Framework for web apps.",
+                percent: "70%",
+              },
+              {
+                title: "Tailwind CSS",
+                desc: "Interactive Framework for web apps.",
                 percent: "80%",
               },
               {
