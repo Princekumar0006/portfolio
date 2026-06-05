@@ -1,9 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function About() {
   return (
@@ -39,7 +39,7 @@ export default function About() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-xl aspect-[4/5]">
+              <div className="relative overflow-hidden rounded-3xl shadow-xl aspect-square">
                 <Image src="https://bootstrapmade.com/content/demo/FolioOne/assets/img/profile/profile-square-11.webp" alt="About Image" fill className="object-cover" />
               </div>
             </motion.div>
@@ -59,7 +59,7 @@ export default function About() {
             >
               <span className="font-medium text-[#e87532]">About Me</span>
 
-              <h3 className="text-4xl font-semibold leading-tight">Frontend Developer & UI Enthusiast</h3>
+              <h3 className="text-4xl font-semibold leading-tight">Frontend Developer</h3>
 
               <p className="leading-7 text-slate-600">I specialize in creating responsive interfaces using HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, and Shopify development.</p>
 
@@ -87,9 +87,90 @@ export default function About() {
                 <a href="/Suresh-Kumar-Resume.pdf" download>
                   Download Resume
                 </a>
-
               </div>
             </motion.div>
+          </div>
+
+          {/* Skills Cards */}
+
+          <div className="mt-20 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {[
+              {
+                title: "HTML",
+                desc: "Semantic and accessible markup structure.",
+                percent: "90%",
+              },
+              {
+                title: "CSS",
+                desc: "Responsive layouts and modern styling.",
+                percent: "90%",
+              },
+              {
+                title: "JavaScript",
+                desc: "Interactive frontend functionality.",
+                percent: "80%",
+              },
+              {
+                title: "Next.js",
+                desc: "Modern React framework for web apps.",
+                percent: "70%",
+              },
+            ].map((skill, index) => (
+              <motion.div
+                key={skill.title}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.15,
+                }}
+                whileHover={{
+                  y: -10,
+                  scale: 1.02,
+                }}
+                className="rounded-2xl bg-white p-6 shadow-lg"
+              >
+                <h4 className="text-lg font-semibold text-slate-900">{skill.title}</h4>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">{skill.desc}</p>
+
+                <div className="mt-6 flex items-center justify-between text-sm">
+                  <span className="text-slate-500">Skill Level</span>
+
+                  <span className="font-semibold text-slate-900">{skill.percent}</span>
+                </div>
+
+                {/* Progress Bar */}
+
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-[#e87532]/15">
+                  <motion.div
+                    initial={{
+                      width: 0,
+                    }}
+                    whileInView={{
+                      width: skill.percent,
+                    }}
+                    viewport={{
+                      once: true,
+                    }}
+                    transition={{
+                      duration: 1,
+                      delay: index * 0.2,
+                    }}
+                    className="h-full rounded-full bg-[#e87532]"
+                  />
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

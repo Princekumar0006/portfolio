@@ -5,6 +5,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { FaCode } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -56,10 +57,54 @@ export default function Home() {
                 </div>
 
                 {/* Badge */}
-                <div className="absolute bottom-10 left-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg">
+
+                <motion.div
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                  }}
+                  className="absolute bottom-10 left-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex flex-col"
+                >
                   <p className="text-sm font-semibold">4+ Years</p>
+
                   <p className="text-xs text-slate-500">Experience</p>
-                </div>
+                </motion.div>
+
+                {/* Code Card */}
+
+                <motion.div
+                  animate={{
+                    y: [0, -15, 0],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                  }}
+                  className="absolute top-10 right-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex"
+                >
+                  <p className="text-sm font-semibold flex items-center gap-2">
+                    <FaCode />
+                    Code
+                  </p>
+                </motion.div>
+
+                {/* Ideas Card */}
+
+                <motion.div
+                  animate={{
+                    y: [0, 12, 0],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                  }}
+                  className="absolute top-[65%] right-[10%] z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex"
+                >
+                  <p className="text-sm font-semibold">Ideas</p>
+                </motion.div>
               </div>
             </motion.div>
           </div>

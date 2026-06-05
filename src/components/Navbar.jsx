@@ -1,6 +1,6 @@
 "use client";
 import { Menu } from "lucide-react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaCode } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
@@ -12,8 +12,8 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 text-black bg-white py-8">
       <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full bg-white shadow-lg px-6 py-3">
         <div className="flex flex-col items-start justify-center gap-0.5">
-          <span className="text-base font-semibold">Suresh Kumar</span>
-          <span className="text-muted-foreground text-xs font-normal">Frontend Developer</span>
+          <span className="text-lg tracking-wider font-semibold">SK</span>
+          {/* <span className="text-muted-foreground text-xs font-normal">Frontend Developer</span> */}
         </div>
         <div className="hidden items-center justify-center gap-6 md:flex">
           <Link className={pathname === "/" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/">
