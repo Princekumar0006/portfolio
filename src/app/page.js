@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { FaCode } from "react-icons/fa";
+import AnimatedCounters from "@/components/AnimatedCounters";
 
 export default function Home() {
   return (
@@ -33,10 +34,11 @@ export default function Home() {
                 {/* <Button asChild className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/portfolio">View my work</Link>
                 </Button> */}
-                <Button asChild  className="rounded-sm px-4 py-2 h-auto">
+                <Button asChild className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/contact">Let&apos;s connect</Link>
                 </Button>
               </div>
+              <AnimatedCounters />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 80 }}

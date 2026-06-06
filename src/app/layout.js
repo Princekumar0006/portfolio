@@ -18,7 +18,45 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Suresh Kumar | Frontend Developer",
-  description: "Frontend Developer portfolio of Suresh Kumar, skilled in HTML, CSS, JavaScript, React, Next.js, Tailwind CSS and Shopify.",
+  description:
+    "Frontend Developer portfolio of Suresh Kumar, skilled in HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, Bootstrap and Shopify.",
+
+  keywords: [
+    "Suresh Kumar",
+    "Frontend Developer",
+    "HTML Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Tailwind CSS Developer",
+    "Shopify Developer",
+  ],
+
+  authors: [{ name: "Suresh Kumar" }],
+
+  openGraph: {
+    title: "Suresh Kumar | Frontend Developer",
+    description:
+      "Explore the portfolio of Suresh Kumar, a Frontend Developer skilled in React, Next.js, Tailwind CSS and Shopify.",
+    url: "https://portfolio-theta-five-lvp8yr04uh.vercel.app/",
+    siteName: "Suresh Kumar Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Suresh Kumar Frontend Developer Portfolio",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Suresh Kumar | Frontend Developer",
+    description:
+      "Frontend Developer portfolio built with Next.js and Tailwind CSS.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -27,13 +65,12 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Loader>
-          <Navbar />
+            <Navbar />
 
-          <main className="flex-1">{children}</main>
+            <main className="flex-1">{children}</main>
 
-          <Footer />
-          <Footer />
-          <BackToTop />
+            <Footer />
+            <BackToTop />
           </Loader>
         </ThemeProvider>
       </body>
