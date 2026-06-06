@@ -11,6 +11,7 @@ export default function ThemeToggle() {
   return (
 
     <Button
+    className={`w-fit cursor-pointer`}
       variant="ghost"
       size="icon"
       onClick={() =>

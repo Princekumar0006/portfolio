@@ -49,10 +49,10 @@ export default function Navbar() {
           </a> */}
           <ThemeToggle />
           
-          <button onClick={() => setCommandOpen(true)}>
-            <Search size={20} />
+          <button className="cursor-pointer" onClick={() => setCommandOpen(true)}>
+            <Search size={18} />
           </button>
-          
+
           {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
