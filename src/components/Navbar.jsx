@@ -1,5 +1,5 @@
 "use client";
-import { Menu } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 import { FaGithub, FaLinkedin, FaInstagram, FaCode } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -7,8 +7,11 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import ThemeToggle from "@/components/theme-toggle";
 import ScrollProgress from "@/components/ScrollProgress";
+import { useState } from "react";
+import CommandMenu from "./CommandMenu";
 
 export default function Navbar() {
+  const [commandOpen, setCommandOpen] = useState(false);
   const pathname = usePathname();
   return (
     <nav className="sticky top-0 z-50 py-8">
@@ -38,19 +41,19 @@ export default function Navbar() {
           <a className="hidden transition-transform duration-300 hover:scale-110 md:block" href="https://github.com/Princekumar0006" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-
           <a className="hidden transition-transform duration-300 hover:scale-110 md:block" href="www.linkedin.com/in/suresh-kumar-b29490225" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-
           {/* <a className="hidden transition-transform duration-300 hover:scale-110 md:block" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a> */}
-
           <ThemeToggle />
-
+          
+          <button onClick={() => setCommandOpen(true)}>
+            <Search size={20} />
+          </button>
+          
           {/* Mobile Menu */}
-
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -120,6 +123,7 @@ export default function Navbar() {
         </div>
       </div>
       <ScrollProgress />
+      <CommandMenu open={commandOpen} setOpen={setCommandOpen} />
     </nav>
   );
 }

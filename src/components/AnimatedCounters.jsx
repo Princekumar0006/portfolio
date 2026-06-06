@@ -15,7 +15,7 @@ const stats = [
     label: "Projects Completed",
   },
   {
-    value: 10,
+    value: 7,
     suffix: "+",
     label: "Technologies",
   },

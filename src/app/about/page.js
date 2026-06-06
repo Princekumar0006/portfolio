@@ -123,6 +123,11 @@ export default function About() {
                 percent: "80%",
               },
               {
+                title: "React",
+                desc: "React framework for web apps.",
+                percent: "70%",
+              },
+              {
                 title: "Next.js",
                 desc: "Modern React framework for web apps.",
                 percent: "70%",
