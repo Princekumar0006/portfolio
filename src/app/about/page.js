@@ -13,7 +13,7 @@ export default function About() {
           {/* Heading */}
 
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-16 text-center">
-            <h2 className="text-5xl font-semibold text-slate-900">About</h2>
+            <h2 className="text-5xl font-semibold text-slate-900 dark:text-white">About</h2>
 
             <div className="mx-auto mt-4 w-44 text-[#e87532]">
               <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" className="w-full">
@@ -21,7 +21,7 @@ export default function About() {
               </svg>
             </div>
 
-            <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-600">Passionate frontend developer focused on building responsive, high-performance and user friendly experiences.</p>
+            <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-900 dark:text-slate-400">Passionate frontend developer focused on building responsive, high-performance and user friendly experiences.</p>
           </motion.div>
 
           {/* Content */}
@@ -61,27 +61,27 @@ export default function About() {
 
               <h3 className="text-4xl font-semibold leading-tight">Frontend Developer</h3>
 
-              <p className="leading-7 text-slate-600">I specialize in creating responsive interfaces using HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, and Shopify development.</p>
+              <p className="leading-7 text-slate-900 dark:text-slate-400">I specialize in creating responsive interfaces using HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, and Shopify development.</p>
 
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <p className="font-semibold">Name</p>
-                  <p className="text-slate-600">Suresh Kumar</p>
+                  <p className="text-slate-900 dark:text-slate-400">Suresh Kumar</p>
                 </div>
 
                 <div>
                   <p className="font-semibold">Experience</p>
-                  <p className="text-slate-600">4+ Years</p>
+                  <p className="text-slate-900 dark:text-slate-400">4+ Years</p>
                 </div>
 
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-slate-600">sureshkumarrtu@gmail.com</p>
+                  <p className="text-slate-900 dark:text-slate-400">sureshkumarrtu@gmail.com</p>
                 </div>
 
                 <div>
                   <p className="font-semibold">Location</p>
-                  <p className="text-slate-600">Kota, Rajasthan</p>
+                  <p className="text-slate-900 dark:text-slate-400">Kota, Rajasthan</p>
                 </div>
 
                 <Button asChild>
@@ -149,16 +149,16 @@ export default function About() {
                   y: -10,
                   scale: 1.02,
                 }}
-                className="rounded-2xl bg-white p-6 shadow-lg"
+                className="rounded-2xl bg-white dark:bg-zinc-900 p-6 shadow-lg"
               >
-                <h4 className="text-lg font-semibold text-slate-900">{skill.title}</h4>
+                <h4 className="text-lg font-semibold text-slate-900 dark:text-white">{skill.title}</h4>
 
-                <p className="mt-3 text-sm leading-6 text-slate-600">{skill.desc}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-900 dark:text-slate-400">{skill.desc}</p>
 
                 <div className="mt-6 flex items-center justify-between text-sm">
                   <span className="text-slate-500">Skill Level</span>
 
-                  <span className="font-semibold text-slate-900">{skill.percent}</span>
+                  <span className="font-semibold text-slate-900 dark:text-white">{skill.percent}</span>
                 </div>
 
                 {/* Progress Bar */}

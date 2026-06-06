@@ -54,7 +54,7 @@ export default function PortfolioPage() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="text-5xl font-semibold text-slate-900">Portfolio</h2>
+          <h2 className="text-5xl font-semibold text-slate-900 dark:text-white">Portfolio</h2>
 
           <div className="mx-auto mt-4 w-44 text-[#e87532]">
             <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" className="w-full">
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
             </svg>
           </div>
 
-          <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-600">
+          <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-900 dark:text-slate-400">
             Recent projects and frontend work.
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export default function PortfolioPage() {
               className={`rounded-full px-6 py-2 transition-all duration-300 ${
                 activeTab === tab
                   ? "bg-[#e87532] text-white shadow-lg"
-                  : "border bg-white hover:border-[#e87532] hover:text-[#e87532]"
+                  : "border bg-white dark:bg-black hover:border-[#e87532] hover:text-[#e87532]"
               }`}
             >
               {tab}
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="overflow-hidden rounded-3xl bg-white shadow-lg transition-shadow hover:shadow-2xl"
+              className="overflow-hidden rounded-3xl bg-white dark:bg-black shadow-lg transition-shadow hover:shadow-2xl"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.4 }} className="h-full w-full">

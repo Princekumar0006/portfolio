@@ -5,30 +5,32 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import ThemeToggle from "@/components/theme-toggle";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="sticky top-0 z-50 text-black bg-white py-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full bg-white shadow-lg px-6 py-3">
+    <nav className="sticky top-0 z-50 py-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full shadow-lg px-6 py-3 bg-white dark:bg-zinc-900 dark:border dark:border-zinc-800">
         <div className="flex flex-col items-start justify-center gap-0.5">
           <span className="text-lg tracking-wider font-semibold">SK</span>
           <span className="text-muted-foreground text-xs font-normal">Frontend Developer</span>
         </div>
         <div className="hidden items-center justify-center gap-6 md:flex">
-          <Link className={pathname === "/" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/">
+          <Link className={pathname === "/" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500 "} href="/">
             Home
           </Link>
-          <Link className={pathname === "/about" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/about">
+          <Link className={pathname === "/about" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500 "} href="/about">
             About
           </Link>
-          <Link className={pathname === "/resume" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/resume">
+          <Link className={pathname === "/resume" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500 "} href="/resume">
             Resume
           </Link>
-          {/* <Link className={pathname === "/portfolio" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/portfolio">
+          {/* <Link className={pathname === "/portfolio" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500 "} href="/portfolio">
             Portfolio
           </Link> */}
-          <Link className={pathname === "/contact" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/contact">
+          <Link className={pathname === "/contact" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500 "} href="/contact">
             Contact
           </Link>
         </div>
@@ -44,6 +46,8 @@ export default function Navbar() {
           {/* <a className="hidden transition-transform duration-300 hover:scale-110 md:block" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a> */}
+
+          <ThemeToggle />
 
           {/* Mobile Menu */}
 
@@ -115,6 +119,7 @@ export default function Navbar() {
           </Sheet>
         </div>
       </div>
+      <ScrollProgress />
     </nav>
   );
 }

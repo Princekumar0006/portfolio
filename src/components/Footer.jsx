@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-white py-10">
+    <footer className="border-t bg-white dark:bg-black py-10">
       <div className="mx-auto max-w-6xl px-4 text-center">
-        <p className="text-sm text-slate-700">
+        <p className="text-sm text-slate-700 dark:text-slate-400">
           © Copyright <span className="font-semibold">Suresh Kumar</span>. All Rights Reserved
         </p>
 
@@ -22,7 +22,7 @@ export default function Footer() {
           </a> */}
         </div>
 
-        <p className="mt-4 text-xs text-slate-500">
+        <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
           Designed & Built by <span className="font-medium text-[#e87532]">Suresh Kumar</span>
         </p>
       </div>

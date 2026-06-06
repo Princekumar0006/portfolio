@@ -27,13 +27,13 @@ export default function Home() {
 
               <h2 className="text-2xl text-[#e87532] font-medium">Frontend Developer</h2>
 
-              <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-600">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Bootstrap and Tailwind CSS.</p>
+              <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-900 dark:text-slate-400">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Bootstrap and Tailwind CSS.</p>
 
               <div className="flex items-center justify-center lg:justify-start gap-3">
-                <Button asChild className="rounded-sm px-4 py-2 h-auto">
+                {/* <Button asChild className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/portfolio">View my work</Link>
-                </Button>
-                <Button asChild variant="outline" className="rounded-sm px-4 py-2 h-auto">
+                </Button> */}
+                <Button asChild  className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/contact">Let&apos;s connect</Link>
                 </Button>
               </div>
@@ -66,7 +66,7 @@ export default function Home() {
                     duration: 3,
                     repeat: Infinity,
                   }}
-                  className="absolute bottom-10 left-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex flex-col"
+                  className="absolute bottom-10 left-6 z-20 rounded-full bg-white dark:bg-black px-5 py-3 shadow-lg hidden lg:flex flex-col"
                 >
                   <p className="text-sm font-semibold">4+ Years</p>
 
@@ -83,7 +83,7 @@ export default function Home() {
                     duration: 2.5,
                     repeat: Infinity,
                   }}
-                  className="absolute top-10 right-6 z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex"
+                  className="absolute top-10 right-6 z-20 rounded-full bg-white dark:bg-black px-5 py-3 shadow-lg hidden lg:flex"
                 >
                   <p className="text-sm font-semibold flex items-center gap-2">
                     <FaCode />
@@ -101,7 +101,7 @@ export default function Home() {
                     duration: 4,
                     repeat: Infinity,
                   }}
-                  className="absolute top-[65%] right-[10%] z-20 rounded-full bg-white px-5 py-3 shadow-lg hidden lg:flex"
+                  className="absolute top-[65%] right-[10%] z-20 rounded-full bg-white dark:bg-black px-5 py-3 shadow-lg hidden lg:flex"
                 >
                   <p className="text-sm font-semibold">Ideas</p>
                 </motion.div>

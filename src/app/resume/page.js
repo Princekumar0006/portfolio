@@ -8,7 +8,7 @@ export default function Resume() {
         <div className="mx-auto w-full max-w-6xl px-4">
           {/* Heading */}
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-16 text-center">
-            <h2 className="text-5xl font-semibold text-slate-900">Resume</h2>
+            <h2 className="text-5xl font-semibold text-slate-900 dark:text-white">Resume</h2>
 
             <div className="mx-auto mt-4 w-44 text-[#e87532]">
               <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" className="w-full">
@@ -16,14 +16,14 @@ export default function Resume() {
               </svg>
             </div>
 
-            <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-600">My professional journey, work experience and education background.</p>
+            <p className="mx-auto mt-6 max-w-2xl leading-7 text-slate-900 dark:text-slate-400">My professional journey, work experience and education background.</p>
           </motion.div>
 
           {/* Work Experience */}
           <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: true }} className="mb-20">
-            <h3 className="mb-4 text-3xl font-semibold text-slate-900">Work Experience</h3>
+            <h3 className="mb-4 text-3xl font-semibold text-slate-900 dark:text-white">Work Experience</h3>
 
-            <p className="mb-10 max-w-3xl text-slate-600">Practical experience in frontend development, responsive web design, Shopify customization and modern UI development.</p>
+            <p className="mb-10 max-w-3xl text-slate-900 dark:text-slate-400">Practical experience in frontend development, responsive web design, Shopify customization and modern UI development.</p>
 
             <div className="space-y-10">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-[220px_1fr]">
@@ -35,9 +35,9 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">Senior HTML Developer</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Working on responsive websites, Shopify stores, custom UI sections, JavaScript functionality and modern frontend development using React, Next.js and Tailwind CSS.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Working on responsive websites, Shopify stores, custom UI sections, JavaScript functionality and modern frontend development using React, Next.js and Tailwind CSS.</p>
 
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-900 dark:text-slate-400">
                     <li>Developed responsive and mobile-friendly web pages using HTML5, CSS3, JavaScript, React.js, and Next.js.</li>
                     <li>Improved website responsiveness and frontend performance through optimized HTML and CSS structure.</li>
                     <li>Collaborated with designers and developers to translate Figma designs into functional UI components.</li>
@@ -58,9 +58,9 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">HTML Developer</h4>
-                  {/* <p className="mt-3 leading-7 text-slate-600">Working on responsive websites, Shopify stores, custom UI sections, JavaScript functionality and modern frontend development using React, Next.js and Tailwind CSS.</p> */}
+                  {/* <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Working on responsive websites, Shopify stores, custom UI sections, JavaScript functionality and modern frontend development using React, Next.js and Tailwind CSS.</p> */}
 
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-900 dark:text-slate-400">
                     <li>Developed responsive and cross-browser compatible UI.</li>
                     <li>Worked on Shopify theme customization and app UI.</li>
                     <li>Implemented JavaScript based interactive features.</li>
@@ -78,7 +78,7 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">Computer Operator</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Worked in University Teaching Department, Mechanical, Rajasthan Technical University, Kota.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Worked in University Teaching Department, Mechanical, Rajasthan Technical University, Kota.</p>
                 </div>
               </div>
 
@@ -87,9 +87,9 @@ export default function Resume() {
 
           {/* Education */}
           <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true }} className="mb-20">
-            <h3 className="mb-4 text-3xl font-semibold text-slate-900">My Education</h3>
+            <h3 className="mb-4 text-3xl font-semibold text-slate-900 dark:text-white">My Education</h3>
 
-            <p className="mb-10 max-w-3xl text-slate-600">My academic background in computer science and technical education.</p>
+            <p className="mb-10 max-w-3xl text-slate-900 dark:text-slate-400">My academic background in computer science and technical education.</p>
 
             <div className="space-y-10">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-[220px_1fr]">
@@ -101,7 +101,7 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">B.Tech in Computer Science</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Completed Bachelor of Technology in Computer Science.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Completed Bachelor of Technology in Computer Science.</p>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">Diploma in Computer Science</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Completed Diploma in Computer Science from Board of Technical Education.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Completed Diploma in Computer Science from Board of Technical Education.</p>
                 </div>
               </div>
             </div>
@@ -122,9 +122,9 @@ export default function Resume() {
           
           {/* Cources */}
           <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true }}>
-            <h3 className="mb-4 text-3xl font-semibold text-slate-900">My Cetificates</h3>
+            <h3 className="mb-4 text-3xl font-semibold text-slate-900 dark:text-white">My Cetificates</h3>
 
-            {/* <p className="mb-10 max-w-3xl text-slate-600">My academic background in computer science and technical education.</p> */}
+            {/* <p className="mb-10 max-w-3xl text-slate-900 dark:text-slate-400">My academic background in computer science and technical education.</p> */}
 
             <div className="space-y-10">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-[220px_1fr]">
@@ -136,7 +136,7 @@ export default function Resume() {
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">Web Development</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Completed 42 days web development training covering HTML, CSS, Bootstrap, 
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Completed 42 days web development training covering HTML, CSS, Bootstrap, 
 SQL, and PHP.</p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ SQL, and PHP.</p>
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">Web Designing</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Completed 90 days Web Designing.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Completed 90 days Web Designing.</p>
                 </div>
               </div>
 
@@ -163,7 +163,7 @@ SQL, and PHP.</p>
                 <div className="relative border-l border-[#e87532]/30 pl-8">
                   <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-[#e87532]" />
                   <h4 className="text-xl font-semibold">PHP</h4>
-                  <p className="mt-3 leading-7 text-slate-600">Completed 90 days Core PHP training.</p>
+                  <p className="mt-3 leading-7 text-slate-900 dark:text-slate-400">Completed 90 days Core PHP training.</p>
                 </div>
               </div>
 

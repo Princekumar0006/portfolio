@@ -21,7 +21,7 @@ transition={{duration:0.6}} className="text-center max-w-xl">
           Page Not Found
         </h2>
 
-        <p className="mt-4 text-slate-600">
+        <p className="mt-4 text-slate-900 dark:text-slate-400">
           Sorry, the page you are looking for does not exist
           or has been moved.
         </p>

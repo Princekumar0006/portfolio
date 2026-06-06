@@ -31,14 +31,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative w-full bg-slate-50 py-24">
+    <section className="relative w-full py-24">
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-14 px-4 md:grid-cols-2">
         <motion.div initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="space-y-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#e87532]">Contact</p>
 
-          <h1 className="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">Let&apos;s build something great together</h1>
+          <h1 className="text-4xl font-semibold leading-tight text-slate-900 dark:text-white md:text-5xl">Let&apos;s build something great together</h1>
 
-          <p className="max-w-lg leading-7 text-slate-600">Have a project, job opportunity, or freelance work? Feel free to contact me. I&apos;ll get back to you as soon as possible.</p>
+          <p className="max-w-lg leading-7 text-slate-900 dark:text-slate-400">Have a project, job opportunity, or freelance work? Feel free to contact me. I&apos;ll get back to you as soon as possible.</p>
 
           <div className="space-y-5 pt-4">
             <div className="flex items-center gap-4">
@@ -61,12 +61,12 @@ export default function Contact() {
             </div>
           </div>
 
-          <a href="https://www.google.com/maps/search/Kota,+Rajasthan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium text-slate-900 transition-colors hover:text-[#e87532]">
+          <a href="https://www.google.com/maps/search/Kota,+Rajasthan" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium text-slate-900 dark:text-white transition-colors hover:text-[#e87532]">
             Open Map <ArrowRight size={16} />
           </a>
         </motion.div>
 
-        <motion.form initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true }} className="rounded-2xl bg-white p-8 shadow-lg">
+        <motion.form initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true }} className="rounded-2xl bg-white dark:bg-black p-8 shadow-lg">
           <div className="space-y-5">
             <input type="text" placeholder="Your Name" className="w-full rounded-lg border border-slate-200 px-4 py-3 outline-none transition-colors focus:border-[#e87532]" />
 
