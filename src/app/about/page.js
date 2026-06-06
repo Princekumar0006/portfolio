@@ -26,10 +26,10 @@ export default function About() {
 
           {/* Content */}
 
-          <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-14">
             {/* Left Image */}
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
@@ -42,7 +42,7 @@ export default function About() {
               <div className="relative overflow-hidden rounded-3xl shadow-xl aspect-square">
                 <Image src="https://bootstrapmade.com/content/demo/FolioOne/assets/img/profile/profile-square-11.webp" alt="About Image" fill className="object-cover" />
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Right Content */}
 
