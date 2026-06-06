@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full bg-white shadow-lg px-6 py-3">
         <div className="flex flex-col items-start justify-center gap-0.5">
           <span className="text-lg tracking-wider font-semibold">SK</span>
-          {/* <span className="text-muted-foreground text-xs font-normal">Frontend Developer</span> */}
+          <span className="text-muted-foreground text-xs font-normal">Frontend Developer</span>
         </div>
         <div className="hidden items-center justify-center gap-6 md:flex">
           <Link className={pathname === "/" ? "text-orange-500" : "transition-colors duration-300 hover:text-orange-500"} href="/">
