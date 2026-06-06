@@ -30,10 +30,10 @@ export default function Home() {
               <p className="max-w-md max-lg:mx-auto text-base leading-7 text-slate-600">I build responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, Bootstrap and Tailwind CSS.</p>
 
               <div className="flex items-center justify-center lg:justify-start gap-3">
-                <Button asChild className="rounded-full px-4 py-2.5 h-auto">
+                <Button asChild className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/portfolio">View my work</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full px-4 py-2.5 h-auto">
+                <Button asChild variant="outline" className="rounded-sm px-4 py-2 h-auto">
                   <Link href="/contact">Let&apos;s connect</Link>
                 </Button>
               </div>

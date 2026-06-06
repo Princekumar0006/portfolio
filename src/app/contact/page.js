@@ -76,7 +76,7 @@ export default function Contact() {
 
             <textarea placeholder="Message" rows="6" className="w-full resize-none rounded-lg border border-slate-200 px-4 py-3 outline-none transition-colors focus:border-[#e87532]" />
 
-            <Button className="h-auto w-full rounded-lg bg-[#e87532] py-3 hover:bg-[#d96524]">Submit Message</Button>
+            <Button className="h-auto w-full rounded-lg bg-[#e87532] py-3 py-2 hover:bg-[#d96524]">Submit Message</Button>
           </div>
         </motion.form>
       </div>
