@@ -86,8 +86,8 @@ export default function Navbar() {
             <SheetContent side="right" className="w-[280px] px-6">
               <div className="mt-10 flex flex-col gap-8">
                 <div>
-                  <p className="text-lg font-semibold text-slate-900">Suresh Kumar</p>
-                  <p className="text-sm text-slate-500">Frontend Developer</p>
+                  <p className="text-xl font-semibold text-slate-900 dark:text-white">Suresh Kumar</p>
+                  <p className="text-sm text-slate-400 mt-1">Frontend Developer</p>
                 </div>
 
                 <div className="flex flex-col gap-5">
@@ -99,7 +99,7 @@ export default function Navbar() {
                     { label: "Contact", href: "/contact" },
                   ].map((item) => (
                     <SheetClose asChild key={item.href}>
-                      <Link href={item.href} className={pathname === item.href ? "text-[#e87532] font-semibold" : "text-slate-700 transition-colors hover:text-[#e87532]"}>
+                      <Link href={item.href} className={pathname === item.href ? "text-[#e87532] font-semibold" : "text-slate-700 transition-colors hover:text-[#e87532] dark:text-white"}>
                         {item.label}
                       </Link>
                     </SheetClose>
