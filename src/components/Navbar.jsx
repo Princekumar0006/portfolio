@@ -14,7 +14,7 @@ export default function Navbar() {
   const [commandOpen, setCommandOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <nav className="sticky top-0 z-50 py-8">
+    <nav className="sticky top-0 z-50 py-8 bg-white dark:bg-[#0b0b0b]">
       <div className="grid grid-cols-2 md:grid-cols-3 items-center max-w-6xl w-full mx-auto rounded-full shadow-lg px-6 py-3 bg-white dark:bg-zinc-900 dark:border dark:border-zinc-800">
         <div className="flex flex-col items-start justify-center gap-0.5">
           <span className="text-lg tracking-wider font-semibold">SK</span>

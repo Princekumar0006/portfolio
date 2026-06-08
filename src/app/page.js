@@ -7,8 +7,10 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { FaCode } from "react-icons/fa";
 import AnimatedCounters from "@/components/AnimatedCounters";
+import { useState } from "react";
 
 export default function Home() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   return (
     <>
       <section className="relative w-full min-h-[70vh] flex items-center py-20 pt-10">
@@ -109,7 +111,27 @@ export default function Home() {
                 </motion.div>
               </div>
             </motion.div> */}
-            <motion.div initial={{ opacity: 0, x: 80 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} className="relative">
+            <motion.div
+              initial={{ opacity: 0, x: 80 }}
+              animate={{
+                opacity: 1,
+                x: mousePosition.x * 0.03,
+                y: mousePosition.y * 0.03,
+              }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                setMousePosition({ x, y });
+              }}
+              onMouseLeave={() => {
+                setMousePosition({ x: 0, y: 0 });
+              }}
+              className="relative"
+            >
               <div className="rounded-3xl border bg-white p-6 shadow-2xl dark:border-zinc-800 dark:bg-zinc-900">
                 <div className="mb-5 flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-400" />
@@ -136,9 +158,27 @@ export default function Home() {
                 </pre>
               </div>
 
-              <div className="absolute -right-3 -top-4 rounded-2xl bg-[#e87532] px-5 py-3 text-sm font-semibold text-white shadow-lg">Clean Code</div>
+              <motion.div
+                animate={{
+                  x: mousePosition.x * -0.06,
+                  y: mousePosition.y * -0.06,
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute -right-3 -top-4 rounded-2xl bg-[#e87532] px-5 py-3 text-sm font-semibold text-white shadow-lg"
+              >
+                Clean Code
+              </motion.div>
 
-              <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white px-5 py-3 text-sm font-semibold shadow-lg dark:bg-zinc-800">Responsive UI</div>
+              <motion.div
+                animate={{
+                  x: mousePosition.x * -0.08,
+                  y: mousePosition.y * -0.08,
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute -bottom-4 -left-4 rounded-2xl bg-white px-5 py-3 text-sm font-semibold shadow-lg dark:bg-zinc-800"
+              >
+                Responsive UI
+              </motion.div>
             </motion.div>
           </div>
         </div>
