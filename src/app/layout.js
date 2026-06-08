@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import BackToTop from "@/components/BackToTop";
 import Loader from "@/components/Loader";
 import CommandMenu from "@/components/CommandMenu";
+import CustomCursor from "@/components/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Loader>
+            <CustomCursor />
             <CommandMenu />
             <Navbar />
 
